@@ -2,6 +2,7 @@ import { Aboutme } from "./components/about-me/About-me";
 import { Experience } from "./components/experience/Experience";
 import { Header } from "./components/header/Header";
 import { SectionLayout } from "./components/layout/SectionLayout";
+import { Projects } from "./components/projects/Projects";
 import { Stack } from "./components/stack/Stack";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Aboutme />
         <Experience />
         <Stack />
+        <Projects />
       </SectionLayout>
     </main>
   );
