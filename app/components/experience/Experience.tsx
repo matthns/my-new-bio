@@ -5,6 +5,7 @@ type ItemProps = {
   where: string;
   course: string;
   time: string;
+  current: boolean;
 };
 
 const experience: ItemProps[] = [
@@ -13,24 +14,35 @@ const experience: ItemProps[] = [
     type: "Full Time",
     course: "IT Assistant",
     time: "8 yrs",
+    current:false
   },
   {
     where: "MMA DEVS",
     type: "Self-employed",
     course: "Front-End Developer",
     time: "4 mts",
+    current:false
   },
   {
     where: "Minsait",
     type: "Full Time",
     course: "Techinician Support Level 2",
     time: "2 mts",
+    current:true
   },
 ];
+
+function calcDate(){
+  let d = new Date(Date.now())
+
+  console.log(d)
+}
+calcDate()
 
 export const Experience = () => {
   return (
     <section>
+
       <header className="flex flex-col it py-4">
         <h4 className="font-semibold">Experience</h4>
         <hr />
